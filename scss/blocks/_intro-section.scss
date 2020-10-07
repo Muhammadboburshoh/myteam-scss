@@ -1,0 +1,114 @@
+.intro-section {
+  background-image: url("../img/intro-bg-right.png");
+  background-repeat: no-repeat;
+  background-position: left 130px;
+  background-size: 100px 200px;
+}
+
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../img/intro-bg-bottom.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  padding-top: 130px;
+  padding-bottom: 250px;
+  background-size: 358px 100px;
+}
+
+.intro__heading {
+  max-width: 635px;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 100px;
+  font-weight: 700;
+  margin: 0;
+  margin-right: 20px;
+}
+
+.intro__heding-color {
+  color: $hover-color;
+}
+
+.intro__hr {
+  max-width: 50px;
+  height: 4px;
+  background-color: #79C8C7;
+  border: none;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+.intro__text {
+  width: 445px;
+  margin: 0;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  
+  .intro-section {
+    background-image: url("../img/intro-bg-bottom@2x.png");
+  }
+  
+  .intro-section {
+    background-image: url("../img/intro-bg-right@2x.png");
+  }
+}
+
+
+@media only screen and (max-width: 1021px) {
+  .intro__heading {
+    font-size: 80px;
+  }
+}
+
+@media only screen and (max-width: 916px) {
+  .intro-section {
+    background-image: none;
+  }
+
+  .intro-container {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-position: center bottom;
+  }
+
+  .intro__heading {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .intro__hr {
+    display: none;
+  }
+
+  .intro__text {
+    max-width: 520px;
+    padding: 0 10px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .intro__heading {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .intro__text {
+    width: 100%;
+    padding: 10px;
+  }
+}
