@@ -1,0 +1,141 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 73px;
+}
+
+.logo-link {
+  display: inline-block;
+  margin-right: 80px;
+}
+
+.logo-img {
+  display: block;
+}
+
+.sitenav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sitenav__list {
+  @include reset-list;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.sitenav__item {
+  margin-right: 40px;
+}
+
+.sitenav__item:last-child {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.sitenav-link {
+  text-decoration: none;
+  color: $main-text-color;
+  transition: color 0.3s ease,
+}
+
+.sitenav-link:hover {
+  color: $hover-color;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: $main-text-color;
+  padding: 10px 32px;
+  border: 2px solid #FFFFFF;
+  border-radius: 24px;
+  transition: background-color 0.3s ease,
+  color 0.3s ease;
+}
+
+.contact-link:hover {
+  background-color: #fff;
+  color: #002529;
+}
+
+.navmenu-togler {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-link  {
+    margin-right: 48px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .logo-img {
+    width: 130px;
+    height: 32px;
+  }
+   .sitenav__list{
+    //  display: none;
+      position: fixed;
+      right: -100%;
+      transform: translateX(100%);
+      transition: transform 400ms ease;
+
+   }
+
+   .sitenav__item:last-child {
+    margin-left: 0;
+   }
+  .open-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: #2C6269;
+    @include reset-list;
+    padding-left: 48px;
+    padding-top: 112px;
+    // animation: smooth-opacity 700ms forwards;
+    transform: translateX(0);
+    transition: transform 400ms ease, box-shadow 900ms ease;
+    box-shadow: -200px 0px 0px 0px rgba(0,0,0,0.4);
+  }
+
+  .navmenu-togler {
+    outline: none;
+    display: block;
+    border: none;
+    background: none;
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    box-shadow: 0 5px #fff, 0 -5px #fff;
+    z-index: 2;
+  }
+
+  .open-button {
+    outline: none;
+    display: block;
+    border: none;
+    background: none;
+    width: 20px;
+    height: 3px;
+    z-index: 2;
+    background-color: #fff;
+  }
+
+
+  .sitenav__item {
+    margin-bottom: 24px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+}
