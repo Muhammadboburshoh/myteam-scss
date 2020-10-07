@@ -18,7 +18,7 @@ only screen and (                min-resolution: 2dppx) {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: url("../../img/intro-bg-bottom.png");
+  background-image: url("../img/intro-bg-bottom.png");
   background-position: right bottom;
   background-repeat: no-repeat;
   padding-top: 130px;
@@ -32,7 +32,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-  .intro-section {background-image: url("../../img/intro-bg-bottom@2x.png")}
+  .intro-section {background-image: url("../img/intro-bg-bottom@2x.png")}
 }
 
 .intro__heading {
