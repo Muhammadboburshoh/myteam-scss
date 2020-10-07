@@ -1,5 +1,5 @@
 .intro-section {
-  background-image: url("../../img/intro-bg-right.png");
+  background-image: url("../img/intro-bg-right.png");
   background-repeat: no-repeat;
   background-position: left 130px;
 }
@@ -11,7 +11,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-  .intro-section {background-image: url("../../img/intro-bg-right@2x.png")}
+  .intro-section {background-image: url("../img/intro-bg-right@2x.png")}
 }
 
 .intro-container {
@@ -23,6 +23,7 @@ only screen and (                min-resolution: 2dppx) {
   background-repeat: no-repeat;
   padding-top: 130px;
   padding-bottom: 250px;
+  background-size: 358px 100px;
 }
 
 @media
