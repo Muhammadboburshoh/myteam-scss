@@ -6,6 +6,4 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("navmenu-togler")
   navmenu.classList.toggle("open-menu")
   // hamburger.classList.toggle("open-button")
-
 })
-

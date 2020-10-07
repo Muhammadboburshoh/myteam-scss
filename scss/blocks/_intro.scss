@@ -1,0 +1,64 @@
+.intro-section {
+  background-image: url("../../img/intro-bg-right.png");
+  background-repeat: no-repeat;
+  background-position: left 130px;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .intro-section {background-image: url("../../img/intro-bg-right@2x.png")}
+}
+
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../../img/intro-bg-bottom.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  padding-top: 130px;
+  padding-bottom: 250px;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .intro-section {background-image: url("../../img/intro-bg-bottom@2x.png")}
+}
+
+.intro__heading {
+  width: 635px;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 100px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.intro__heding-color {
+  color: $hover-color;
+}
+
+.intro__hr {
+  width: 50px;
+  height: 4px;
+  background-color: #79C8C7;
+  border: none;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+.intro__text {
+  width: 445px;
+  margin: 0;
+}
