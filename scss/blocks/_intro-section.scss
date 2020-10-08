@@ -31,13 +31,16 @@
   color: $hover-color;
 }
 
-.intro__hr {
+.horizontal-line {
   max-width: 50px;
   height: 4px;
-  background-color: #79C8C7;
-  border: none;
   margin-left: 0;
+  border: none;
   margin-top: 0;
+}
+
+.intro__hr {
+  background-color: #79C8C7;
   margin-bottom: 80px;
 }
 
@@ -91,6 +94,8 @@ only screen and (                min-resolution: 2dppx) {
   .intro__hr {
     display: none;
   }
+
+  .about__heading-wrapper .horizontal-line
 
   .intro__text {
     max-width: 520px;

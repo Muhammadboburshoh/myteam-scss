@@ -1,0 +1,108 @@
+.about-section {
+  background-color: #012F34;
+  background-image: url("../img/about-bg.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 100px 244px;
+}
+
+.about-section__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 0;
+}
+
+.about__hr {
+  background-color: $hover-color;
+  margin-bottom: 54px;
+}
+
+.about__heading {
+  max-width: 445px;
+  margin: 0;
+  margin-right: 10px;
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: 700;
+}
+
+.about__list {
+  @include reset-list;
+}
+
+.about__item {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.about__item:last-child {
+  margin: 0;
+}
+
+.about__item::before {
+  display: block;
+  margin-right: 23px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 72px;
+  height: 72px;
+  content: ""
+}
+
+.about__iteam__first-img::before {
+  background-image: url("../img/first-img.png");
+}
+
+.about__iteam__second-img::before {
+  background-image: url("../img/second-img.png");
+}
+
+.about__iteam__third-img::before {
+  background-image: url("../img/third-img.png");
+}
+
+.about__item-wrapper {
+  max-width: 445px;
+}
+
+.about__item__heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color :$hover-color;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.about__item__text {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  margin: 0;
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  
+  .about-section {
+    background-image: url("../img/about-bg@2x.png");
+  }
+  
+  .about__iteam__first-img::before {
+    background-image: url("../img/first-img@2x.png");
+  }
+  
+  .about__iteam__second-img::before {
+    background-image: url("../img/second-img@2x.png");
+  }
+  
+  .about__iteam__third-img::before {
+    background-image: url("../img/third-img@2x.png");
+  }
+}
