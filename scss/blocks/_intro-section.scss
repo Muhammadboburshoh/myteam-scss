@@ -79,7 +79,7 @@ only screen and (                min-resolution: 2dppx) {
   }
 
   .intro-container {
-    display: inline-block;
+    flex-direction: column;
     width: 100%;
     text-align: center;
     background-position: center bottom;
