@@ -2,8 +2,8 @@
   padding-top: 140px;
   padding-bottom: 150px;
   text-align: center;
-  background-image: url("../../img/successful-bg-left.png"),
-  url("../../img/successful-bg-bottom.png");
+  background-image: url("../img/successful-bg-left.png"),
+  url("../img/successful-bg-bottom.png");
   background-size: 147px 100px, 200px 100px;
   background-repeat: no-repeat;
   background-position: left top, right bottom;
@@ -43,7 +43,7 @@
   width: 67px;
   height: 56px;
   display: block;
-  background-image: url("../../img/quotation-marks.png");
+  background-image: url("../img/quotation-marks.png");
   background-repeat: no-repeat;
   background-size: 67px 56px;
   margin-right: auto;
@@ -85,7 +85,7 @@
 }
 
 .successful__img-first::after {
-  background-image: url("../../img/first-img-after.png");
+  background-image: url("../img/first-img-after.png");
 }
 
 
@@ -98,16 +98,16 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
   
   .successful {
-    background-image: url("../../img/successful-bg-left@2x.png"),
-    url("../../img/successful-bg-bottom@2x.png");
+    background-image: url("../img/successful-bg-left@2x.png"),
+    url("../img/successful-bg-bottom@2x.png");
   }
   
   .successful__item::before {
-    background-image: url("../../img/quotation-marks@2x.png");
+    background-image: url("../img/quotation-marks@2x.png");
   }
 
   .successful__img-first::after {
-    background-image: url("../../img/first-img-after@2x.png");
+    background-image: url("../img/first-img-after@2x.png");
   }
 }
 
