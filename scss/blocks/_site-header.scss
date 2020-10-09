@@ -46,17 +46,12 @@
   color: $hover-color;
 }
 
-.contact-link {
-  text-decoration: none;
-  color: $main-text-color;
-  padding: 10px 32px;
+.header__menu-link {
   border: 2px solid #FFFFFF;
-  border-radius: 24px;
-  transition: background-color 0.3s ease,
-  color 0.3s ease;
+  color: $main-text-color;
 }
 
-.contact-link:hover {
+.header__menu-link:hover {
   background-color: #fff;
   color: #002529;
 }
