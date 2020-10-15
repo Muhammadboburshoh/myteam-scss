@@ -1,0 +1,106 @@
+.about-hero {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  background-image: url("../img/about-hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 100px 200px;
+}
+
+.about--hero__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-hero__heading {
+  font-size: 64px;
+  line-height: 100px;
+  margin: 0;
+}
+
+.about-hero__text-wrapper {
+  max-width: 730px;
+}
+
+.about-hero__line {
+  background-color: $hover-color;
+  margin-bottom: 40px;
+}
+
+.about-hero__text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+    .about-hero {
+      background-image: url("../img/about-hero-bg@2x.png");
+    }
+  }
+
+@media only screen and (max-width: 1240px) {
+  .about-hero__text-wrapper {
+    max-width: 600px;
+    margin-right: 100px;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .about-hero__text-wrapper {
+    max-width: 450px;
+    margin-right: 100px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .about--hero__container {
+    display: block;
+  }
+
+  .about-hero__heading {
+    text-align: center;
+  }
+
+  .about-hero__line {
+    display: none;
+  }
+
+  .about-hero__text-wrapper {
+    max-width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .about-hero {
+    padding-top: 70px;
+    padding-bottom: 90px;
+    background-image: url("../img/about-hero-bg-mobil.png");
+    background-size: 100px 100px;
+  }
+
+  .about-hero__text-wrapper {
+    max-width: 80%;
+  }
+
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+    .about-hero {
+      background-image: url("../img/about-hero-bg-mobil@2x.png");
+    }
+  }
+}
+
