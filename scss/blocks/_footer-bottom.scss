@@ -8,7 +8,7 @@
   align-items: center;
   width: 100%;
   align-self: flex-end;
-  // justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer__logo-and-footer__menu {
@@ -45,17 +45,22 @@
   }
 }
 
-.footer__address, .copyright {
+.footer__address{
   font-weight: 600;
   font-size: 15px;
   line-height: 25px;
   opacity: 0.6;
   margin-right: auto;
   margin-left: 125px;
+  max-width: 210px;
 }
 
-.footer__address {
-  max-width: 210px;
+.copyright {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.6;
+  // margin-right: auto;
 }
 
 .footer_acons {
