@@ -1,0 +1,83 @@
+.directors {
+  padding-top: 140px;
+  padding-bottom: 170px;
+  background-color: #004047;
+}
+
+.directors__heading {
+  text-align: center;
+}
+
+.directors__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 15px;
+  margin-left: -15px;
+}
+
+.director__item {
+  padding: 30px;
+  text-align: center;
+  background-color: #012F34;
+  width: 350px;
+  position: relative;
+  // display: flex;
+  // flex-direction: column;
+}
+
+.director-item__heading {
+  font-size: 18px;
+  line-height: 28px;
+  color: #79C8C7;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.director-item__heading::before {
+  content: "";
+  display: inline-block;
+  width:96px;
+  height: 96px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 16px;
+}
+
+.director__fires-img::before {
+  background-image: url("../../img/directors-first.png");
+  background-size: 96px 96px;
+}
+
+.director__job {
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.director__about-open {
+  background-color: $hover-color;
+  border: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.director__about-open {
+  background-image: url("../../img/pelus.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%) translateY(50%);
+  &:hover {
+    background-color: #79C8C7;
+  }
+}
