@@ -22,8 +22,7 @@
   background-color: #012F34;
   width: 350px;
   position: relative;
-  // display: flex;
-  // flex-direction: column;
+  min-height: 255px;
 }
 
 .director-item__heading {
@@ -59,25 +58,45 @@
   margin-bottom: 30px;
 }
 
-.director__about-open {
-  background-color: $hover-color;
+.director__button {
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
   border: none;
   width: 56px;
   height: 56px;
   border-radius: 50%;
+  cursor: pointer;
+  transform: translateX(50%) translateY(50%);
+  transition: background-color 0.3s ease;
 }
 
 .director__about-open {
   background-image: url("../../img/pelus.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  transform: translateX(50%) translateY(50%);
+  background-color: $hover-color;
+  
   &:hover {
     background-color: #79C8C7;
   }
 }
+
+.direction__about-wrapper-open {
+  background-image: url("../../img/exet-button.png");
+  background-color: #79C8C7;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+.actev-wrapper {
+  display: block;
+  
+}
+
+.direction__about-wrapper {
+  display: none;
+}
+
