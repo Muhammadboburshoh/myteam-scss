@@ -163,12 +163,16 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
   
-  .intro-section {
-    background-image: url("../img/intro-bg-bottom@2x.png");
+  .director__fires-img::before {
+    background-image: url("../img/directors-first@2x.png");
   }
-  
-  .intro-section {
-    background-image: url("../img/intro-bg-right@2x.png");
+
+  .director__about-open {
+    background-image: url("../img/pelus@2x.png");
+  }
+
+  .direction__about-wrapper-open {
+    background-image: url("../img/exet-button@2x.png");
   }
 }
 
