@@ -54,7 +54,7 @@
 }
 
 .director__fires-img::before {
-  background-image: url("../../img/directors-first.png");
+  background-image: url("../img/directors-first.png");
   background-size: 96px 96px;
 }
 
@@ -111,7 +111,7 @@
 }
 
 .director__about-open {
-  background-image: url("../../img/pelus.png");
+  background-image: url("../img/pelus.png");
   background-color: $hover-color;
   
   &:hover {
@@ -120,7 +120,7 @@
 }
 
 .direction__about-wrapper-open {
-  background-image: url("../../img/exet-button.png");
+  background-image: url("../img/exet-button.png");
   background-color: #79C8C7;
 
   &:hover {
