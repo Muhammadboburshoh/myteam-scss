@@ -7,13 +7,17 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("open-button")
 })
 
+// about
+
 const directorButton = document.querySelector(".director__about-open")
 const directorEbout = document.querySelector(".actev-wrapper")
 const directorOpen = document.querySelector(".direction__about-wrapper")
 
 
 directorButton.addEventListener("click", () => {
-  directorButton.classList.toggle("direction__about-wrapper-open")
+
+  // if (directorButton.)
+  // directorButton.classList.toggle("direction__about-wrapper-open")
 
   directorEbout.classList.toggle("actev-wrapper")
   directorEbout.classList.toggle("direction__about-wrapper")
