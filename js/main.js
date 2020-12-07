@@ -9,19 +9,23 @@ hamburger.addEventListener("click", () => {
 
 // about
 
-const directorButton = document.querySelector(".director__about-open")
-const directorEbout = document.querySelector(".actev-wrapper")
-const directorOpen = document.querySelector(".direction__about-wrapper")
+const directorButton = document.querySelector(".director__button")
+const directorEbout = document.querySelector(".director__active")
+const directorOpen = document.querySelector(".directors__close")
 
+// for (var i = 1; i <= 6; i++) {
+//   directorButton.dataset.datas.binnimasi = i;
+// }
 
 directorButton.addEventListener("click", () => {
 
   // if (directorButton.)
-  // directorButton.classList.toggle("direction__about-wrapper-open")
+  directorButton.classList.toggle("direction__about-wrapper-open")
+  directorButton.classList.toggle("director__about-open")
 
-  directorEbout.classList.toggle("actev-wrapper")
-  directorEbout.classList.toggle("direction__about-wrapper")
+  directorEbout.classList.toggle("director__active")
+  directorEbout.classList.toggle("directors__close")
 
-  directorOpen.classList.toggle("direction__about-wrapper")
-  directorOpen.classList.toggle("actev-wrapper")
+  directorOpen.classList.toggle("directors__close")
+  directorOpen.classList.toggle("director__active")
 })
