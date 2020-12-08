@@ -17,15 +17,20 @@ const directorOpen = document.querySelector(".directors__close")
 //   directorButton.dataset.datas.binnimasi = i;
 // }
 
-directorButton.addEventListener("click", () => {
-
-  // if (directorButton.)
-  directorButton.classList.toggle("direction__about-wrapper-open")
-  directorButton.classList.toggle("director__about-open")
+var changer = function (nimadir) {
+  nimadir.classList.toggle("direction__about-wrapper-open")
+  nimadir.classList.toggle("director__about-open")
 
   directorEbout.classList.toggle("director__active")
   directorEbout.classList.toggle("directors__close")
 
   directorOpen.classList.toggle("directors__close")
   directorOpen.classList.toggle("director__active")
+}
+
+directorButton.addEventListener("click", () => {
+  
+  // if (directorButton.)
+  
+  changer(directorButton);
 })
