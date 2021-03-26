@@ -77,17 +77,18 @@
     width: 130px;
     height: 32px;
   }
-   .sitenav__list{
-      position: fixed;
-      right: -100%;
-      transform: translateX(100%);
-      transition: transform 400ms ease;
 
-   }
+  .sitenav__list {
+    position: fixed;
+    right: -100%;
+    transform: translateX(100%);
+    transition: transform 400ms ease;
+  }
 
-   .sitenav__item:last-child {
+  .sitenav__item:last-child {
     margin-left: 0;
-   }
+  }
+
   .open-menu {
     position: fixed;
     top: 0;
@@ -114,13 +115,11 @@
     width: 20px;
     height: 17px;
     background-image: url("../img/hamburger.svg");
-    // height: 3px;
-    // background-color: #fff;
-    // box-shadow: 0 5px #fff, 0 -5px #fff;
     z-index: 2;
   }
 
   .open-button {
+    position: fixed;
     outline: none;
     display: block;
     border: none;
@@ -128,7 +127,9 @@
     width: 20px;
     height: 17px;
     z-index: 2;
+    right: 5%;
     background-image: url("../img/exet.svg");
+    background-position: center center;
   }
 
 

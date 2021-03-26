@@ -141,19 +141,11 @@
 .director__about-open {
   background-image: url("../img/pelus.png");
   background-color: $hover-color;
-  
-  &:hover {
-    background-color: #79C8C7;
-  }
 }
 
 .direction__about-wrapper-open {
   background-image: url("../img/exet-button.png");
   background-color: #79C8C7;
-
-  &:hover {
-    background-color: $hover-color;
-  }
 }
 
 .director__active {
@@ -184,7 +176,7 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
   .directors {
-    background-image: url("../img/directors-left@2x.png"), url("../img/directors-right@2x.png");
+    background-image: url("../img/directors-left.png"), url("../img/directors-right@2x.png");
   }
 
   .director__fires-img::before {
