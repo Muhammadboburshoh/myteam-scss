@@ -24,8 +24,8 @@ for (let i = 0; i < directorButtons.length; i++) {
     directorOpens[i].classList.toggle("directors__close")
     directorOpens[i].classList.toggle("director__active")
 
-    directorButtons[i].classList.toggle("direction__about-wrapper-open")
     directorButtons[i].classList.toggle("director__about-open")
+    directorButtons[i].classList.toggle("direction__about-wrapper-open")
   })
 }
 
