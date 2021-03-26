@@ -7,30 +7,26 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("open-button")
 })
 
-// about
 
-const directorButton = document.querySelector(".director__button")
-const directorEbout = document.querySelector(".director__active")
-const directorOpen = document.querySelector(".directors__close")
+//about page
 
-// for (var i = 1; i <= 6; i++) {
-//   directorButton.dataset.datas.binnimasi = i;
-// }
+const directorButtons = document.querySelectorAll(".director__button")
+const directorEbouts = document.querySelectorAll(".director__active")
+const directorOpens = document.querySelectorAll(".directors__close")
 
-var changer = function (nimadir) {
-  nimadir.classList.toggle("direction__about-wrapper-open")
-  nimadir.classList.toggle("director__about-open")
+for (let i = 0; i < directorButtons.length; i++) {
 
-  directorEbout.classList.toggle("director__active")
-  directorEbout.classList.toggle("directors__close")
+  directorButtons[i].addEventListener("click", () => {
 
-  directorOpen.classList.toggle("directors__close")
-  directorOpen.classList.toggle("director__active")
+    directorEbouts[i].classList.toggle("director__active")
+    directorEbouts[i].classList.toggle("directors__close")
+  
+    directorOpens[i].classList.toggle("directors__close")
+    directorOpens[i].classList.toggle("director__active")
+
+    directorButtons[i].classList.toggle("direction__about-wrapper-open")
+    directorButtons[i].classList.toggle("director__about-open")
+  })
 }
 
-directorButton.addEventListener("click", () => {
-  
-  // if (directorButton.)
-  
-  changer(directorButton);
-})
+
